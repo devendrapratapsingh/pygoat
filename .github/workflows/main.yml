@@ -35,7 +35,7 @@ jobs:
 
    image_scan:
      name: build and scan the image
-     runs-on: ubuntu-20.04
+     runs-on: ubuntu-22.04
      needs: sast_scan
      steps:
          - name: checkout code
