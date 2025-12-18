@@ -20,7 +20,7 @@ jobs:
            run: bandit -ll -ii -r . -f json -o bandit-report.json
 
          - name: upload artifacts
-           uses: actions/upload-artifact@v3
+           uses: actions/upload-artifact@v4
            with:
              name: bandit finddings
              path: bandit-report.json
