@@ -36,7 +36,8 @@ jobs:
          - name: setup docker
            uses: docker-practice/actions-setup-docker@v1
            with:
-              docker_version: '20.10.7'
+              docker_version: '29.1.3'
+              
          - name: build image
            run: docker build -f Dockerfile -t myapp:latest .
 
